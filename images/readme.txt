@@ -1,1 +1,1 @@
-All images for my main page lies here. 
+This directory will be populated with all my main page's images. 
