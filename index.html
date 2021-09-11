@@ -41,10 +41,18 @@
 
 	<!-- color verde: #99c794-->
 	<section>
-		<h2 style="color:#f9ae57">&#960stache</h2>
+		<h2><a href="https://github.com/L4rralde/Arquitectura-de-Procesadores" style="color:#f9ae57">&#960stache</a></h2>
 
 		<p style="color:#d8dee9">	&#960stache is a Single-Issue In-Order pipelined core based on the RV32I ISA subset. I started developing it for my first computer architecture class and it is composed of 5 different pipelined stages, a forwarding unit and a hazard unit. Unfortanately there's no branch predictor inside it, therefore, compilers must add No Operations to make it useful. However, my intentions are to finish this core architecture in order to be custom-made for my needs on Digital Signal Processing within my FPGAs.
 		</p>
+
+		<p style="color:#d8dee9">	&#960stache was developed alongside Quartus Prime. It was intended to be load into a Cyclone IV E EP4CE115F29C7 FPGA. Unfortunately, because of the pandemic, I've only tested it in a RTL simulation by means of ModelSim Altera. The analysis and synthesis ensure the use of 1,076 total logic elements and a maximum clock frequency of 71.89 MHz is warranted by the timing analysis with an slow 1200mV 85C Model. 
+		</p>	
+
+		<p style="color:#d8dee9">	You can get into the repository by clicking in the subtitle in orange. Additionally, next video is a demonstration of &#960stache running a simple bubble sort. 
+		</p>	
+
+
 
 		<video width="960" height="540" controls>
 	  	<source src="videos/pistache_demo.mp4" type="video/mp4">
