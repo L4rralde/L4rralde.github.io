@@ -109,3 +109,10 @@ section p {
 .social-media a:hover {
     color: #0077B5; /* Change the color on hover (e.g., for LinkedIn) */
 }
+
+.fig {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
