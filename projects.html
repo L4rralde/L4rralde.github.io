@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Emmanuel Larralde</title>
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -22,13 +22,86 @@
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="education.html">Education</a></li>
 				<li><a href="awards.html">Awards</a></li>
+                <li><a href="blog.html">Blog</a></li>
 			</ul>
 		</div>
 	</nav>
 
-    <section id="projects" class="container">
-        <h2>projects</h2>
-        <p>WIP</p>
+    <section id="donkietown" class="container">
+        <h2>DonkieTown</h2>
+        <p>
+            DonkieTown is a mobile robotics platform designed to be affordable and scalable. 
+            The idea was to have a testbed with multiple inteligent cars driving at the same time
+            while communicating their driving intentions and state variables as Inteligent Connected 
+            Vehicles alike. It still is my most complex project so far. It was developed over
+            <a href="https://www.ros.org/">ROS</a> using python and C++. For the deployment, I developed
+            bash scripts. It's driving software is powered by Extended Kalman Filters, classic control, 
+            FSMs, and Deep Learning. All running on an onboard Jeston Nano &#128568;.
+        </p>
+        &nbsp;
+        <p>
+            I almost forgot to mention, I designed and built each robot, a tracking system and a
+            Vehicle-to-Vehicle implementation of an international specification.
+        </p>
+        &nbsp;
+        <p>
+            For more details, go to <a href="https://github.com/L4rralde/DonkieTown" >DonkieTown's repo</a>.
+            For technical details read the <a href="https://latamt.ieeer9.org/index.php/transactions/article/view/7756">IEEE paper</a>.
+            Video demos are available at <a href="https://www.youtube.com/channel/UCvsjoRWe66WoE2ocUmzxf3w"> my robotics youtube channel</a>.
+        </p>
+
+        <img src="images/DonkieTown.jpg" alt="DonkieTown" class="fig">
+    </section>
+
+    <section id="ppa" class="container">
+        <h2>Politécnicos Pro Alzheimer (PPA)</h2>
+        <p>
+            Politécnicos Pro Alzheimer was a smart mat originally made to track my grandmother.
+            She has Alzheimer and at that time she used to get lost. In High School, my classmates 
+            and I, created PPA, we won the Samsung Solve For Tomorrow contest and won an invitation
+            to the Cosumer Electronics Show 2018 and a grant to develop our prototype. I started college
+            networking with private health care institutions and Startup accelerators.
+        </p>
+        &nbsp;
+        <p>
+            I was 18-20 years old when I received most of the responsabilities, and
+            since I was also new in Mexico City and enrolled to a time demanding
+            degree, PPA couldn't succeed.
+        </p>
+        &nbsp;
+        <div class="video-container">
+            <!-- YouTube embed code goes here -->
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/AAFeQ3Th06U?si=IQOl_nEN2OUB9myP&amp;start=160"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="pistache" class="container">
+        <h2>&#960stache</h2>
+        <p>
+            &#960stache is a Single-Issue In-Order pipelined core based on the RV32I ISA subset.
+            I started developing it for my first computer architecture class and it is composed
+            of 5 different pipelined stages, a forwarding unit and a hazard unit. 
+            Unfortunately there's no branch predictor inside it, therefore, compilers must add
+            No Operations to make it useful. However, my intentions are to finish this core
+            architecture in order to be custom-made for my needs on Digital Signal Processing 
+            within my FPGAs.
+        </p>
+        &nbsp;
+		<p>
+            &#960stache was developed alongside Quartus Prime. It was intended to be loaded into
+            a Cyclone IV E EP4CE115F29C7 FPGA. Unfortunately, because of the pandemic, I've only
+            tested it in a RTL simulation by means of ModelSim Altera. The analysis and synthesis
+            ensure the use of 1,076 total logic elements and a maximum clock frequency of 71.89 MHz
+            is warranted by the timing analysis with a slow 1200mV 85C Model. 
+		</p>
     </section>
 
     <section id="contact" class="container">
