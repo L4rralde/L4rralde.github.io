@@ -28,34 +28,42 @@
 		</div>
 	</nav>
 
+
     <section id="donkietown" class="container">
         <h2>DonkieTown</h2>
+        <div class="box">
+            <h2>Top tools and programming languages</h2>
+            <ul>
+              <li><span>1</span> ROS</li>
+              <li><span>2</span> Python & C++</li>
+              <li><span>3</span> Nvidia Jetson Nano</li>
+            </ul>
+        </div>
+        &nbsp;
         <p>
             DonkieTown is a mobile robotics platform designed to be affordable and scalable.
             The idea was to have a testbed with multiple intelligent cars driving at the same time
             while communicating their driving intentions and state variables as Intelligent Connected
-            Vehicles alike. It still is my most complex project so far. It was developed over
-            <a href="https://www.ros.org/">ROS</a> using python and C++. For the deployment, I wrote
-            bash scripts. Its driving software is powered by Extended Kalman Filters, classic control,
-            FSMs, and Deep Learning. All running on an onboard Jeston Nano &#128568;.
-        </p>
-        &nbsp;
-        <p>
-            I almost forgot to mention, I designed and built each robot, a tracking system, and a
-            Vehicle-to-Vehicle implementation of an international specification.
+            Vehicles alike. It was developed over
+            <a href="https://www.ros.org/">ROS</a> using python and C++.
+
+            Before building the robots and bringing up the testbed, the driving software had to be designed first.
+            I used Gazebo Sim to do such a task. Using Gazebo was also handy to perform some Software and 
+            Hardware in the Loop testing and to get some performance statistics. In addition, I used Simulink for
+            Kinematic Modelling, Controls, and Kalman Filters tunning.
         </p>
         &nbsp;
         <p>
             For more details, go to <a href="https://github.com/L4rralde/DonkieTown" >DonkieTown's repo</a>.
             For technical details read the <a href="https://latamt.ieeer9.org/index.php/transactions/article/view/7756">IEEE paper</a>.
-            Video demos are available at <a href="https://www.youtube.com/channel/UCvsjoRWe66WoE2ocUmzxf3w"> my robotics youtube channel</a>.
+            Video demos are available at <a href="https://www.youtube.com/channel/UCvsjoRWe66WoE2ocUmzxf3w"> my robotics YouTube channel</a>.
         </p>
         &nbsp;
         <div class="video-container">
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/12F3fFWqgHk?si=eHjVSVVjZj5uzXHo"
+                src="https://www.youtube.com/embed/JZGO7TmNxUI?si=u7JasskyJC04Gvi-"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,26 +72,16 @@
         </div>
     </section>
 
-    <section id="ppa" class="container">
-        <h2>Politécnicos Pro Alzheimer (PPA)</h2>
-        <p>
-            Politécnicos Pro Alzheimer was a smart mat originally made to track my grandmother.
-            She has Alzheimer and at that time she used to get lost. In High School, my classmates 
-            and I created PPA, we won the Samsung Solve For Tomorrow contest and won an invitation
-            to the Consumer Electronics Show 2018 and a grant to develop our prototype. I started college
-            networking with private health care institutions and Startup accelerators.
-        </p>
-        &nbsp;
-        <p>
-            I was 18-20 years old when I received most of the responsibilities, and
-            since I was also new in Mexico City, PPA could not succeed.
-        </p>
-        &nbsp;
-        <img src="images/CES.jpg" alt="cpu_pipeline_simplified" class="fig">
-    </section>
-
     <section id="pistache" class="container">
         <h2>&#960stache</h2>
+        <div class="box">
+            <h2>Top tools and programming languages</h2>
+            <ul>
+              <li><span>1</span>RISC-V</li>
+              <li><span>2</span>Verilog & Vhdl</li>
+              <li><span>3</span>FPGAs</li>
+            </ul>
+        </div>
         <p>
             &#960stache is a Single-Issue In-Order pipelined core based on the RV32I
             (<a href="https://riscv.org/">RISC-V</a> 32-bits Integer Instructions) ISA subset.
@@ -112,26 +110,100 @@
         </div>
     </section>
 
-    <section id="other" class="container">
-        <h2>Short-term projects</h2>
-        <h3>MCR autonomous drones</h3>
+    <section id="mcr_cimat" class="container">
+        <h2>MCR Drones</h2>
+        <div class="box">
+            <h2>Top tools and programming languages</h2>
+            <ul>
+              <li><span>1</span> ROS</li>
+              <li><span>2</span> Python</li>
+              <li><span>3</span> Parrot Bebop Drone</li>
+            </ul>
+        </div>
+        &nbsp;
         <p>
-            I developed the base library for our autonomous driving software. Also, I developed some driving tasks.
-            We finished 1st &#129470; in the Mexican Robotics Competition 2023.
-            By the way, I contributed to this project remotely by using simulations and feedback from my team.
+            In 2023, for the very first time, a group of graduate students of Centro de Investigación en Matemáticas
+            joined the Mexican Robotics Tournament and asked for my help. At that time, I was starting an on-site
+            job at Intel in Guadalajara, i.e., I was in another city. To collaborate, we use an open Gazebo 
+            project of the Parrot Bebop quadcopter and borrow 3 bebops for the competition. Thanks to gazebo,
+            I could develop the base library for our autonomous driving software, and special-purpose software for
+            some challenges. We finished 1st &#129470; in the competition in 2023!
         </p>
         &nbsp;
-        <h3>Autominy Neurotrajectory</h3>
+        <div class="video-container">
+            <iframe 
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SAJubY8qL2o?si=CE87nn4OUOoJU8dl"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="drl" class="container">
+        <h2>Deep Reinforcement Learning</h2>
+        <div class="box">
+            <h2>Top tools and programming languages</h2>
+            <ul>
+              <li><span>1</span>Python</li>
+              <li><span>2</span>OpenAI Gymnasium</li>
+              <li><span>1</span>Pytorch</li>
+            </ul>
+        </div>
         <p>
-            A local path planning based on a feedforward neural network trained with synthetic data designed to run on a car-like robot called Autominy.
-            I developed this project while in a summer research stay.
+            I am really intrigued by understanding Deep Learning. For the sake of that wondering, I took
+            <a href="https://huggingface.co/learn/deep-rl-course/unit0/introduction">Hugging Face's course on Deep Reinforcement Learning</a>
+            and I have been trying to code each algorithm (and others such as Monte Carlo Tree Search)
+            from scratch. I display only the scenarios to prove to work. I can't tell if my other
+            implementations work because I have been using an apple M1 chip for training.
         </p>
         &nbsp;
-        <h3>CanSat Comptetition 2020</h3>
         <p>
-            We made a micro satelite for the <a href="https://www.cansatcompetition.com/">CanSat Competition</a> 2020. I was in charge of the flight software.
-            Finished 9th &#128171; in the first reviews, however, we quit when the organization declared that the on-campus comptetition was cancelled.
+            Actually, I think this adds little to this portfolio of mine, but I think
+            it is certainly worth mentioning. Please, go to <a href="https://github.com/L4rralde/ReinforcementLearning">my repo</a>
+            to explore more about this one.
         </p>
+        &nbsp;
+        <div class="video-container">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qr4d35H0gAI?si=8GdBTH0QuKApCkK6"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="ppa" class="container">
+        <h2>Politécnicos Pro Alzheimer (PPA)</h2>
+        <div class="box">
+            <h2>Top tools and programming languages</h2>
+            <ul>
+              <li><span>1</span>C++</li>
+              <li><span>2</span>Microcontrollers</li>
+              <li><span>1</span>IoT</li>
+            </ul>
+        </div>
+        <p>
+            Politécnicos Pro Alzheimer was a smart mat originally made to track my grandmother.
+            She has Alzheimer and at that time she used to get lost. In High School, my classmates 
+            and I created PPA, we won the Samsung Solve For Tomorrow contest and won an invitation
+            to the Consumer Electronics Show 2018 and a grant to develop our prototype. I started college
+            networking with private health care institutions and Startup accelerators.
+        </p>
+        &nbsp;
+        <p>
+            I was 18-20 years old when I received most of the responsibilities, and
+            since I was also new in Mexico City, PPA could not succeed.
+        </p>
+        &nbsp;
+        <img src="images/CES.jpg" alt="cpu_pipeline_simplified" class="fig">
     </section>
 
     <section id="contact" class="container">
@@ -150,7 +222,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 L4rralde</p>
+            <p>&copy; 2024 L4rralde</p>
         </div>
     </footer>
 </body>
