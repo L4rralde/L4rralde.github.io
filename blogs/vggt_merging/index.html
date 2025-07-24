@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Paper Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Can we build 3D city models with Vision Transformers?">
+  <meta property="og:description" content="Technical report of summer project">
+  <meta property="og:image" content="https://l4rralde.github.io/blogs/vggt_merging/icon.jpeg">
+  <meta property="og:url" content="https://l4rralde.github.io/blogs/vggt_merging/index.html">
+  <meta property="og:type" content="website">
+  <title>Can we build 3D city models with Vision Transformers?</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <button class="lang-toggle" onclick="switchLanguage()">🇪🇸 Español</button>
     <h1>
         <span data-lang="en">Can we build 3D city models with Vision Transformers?</span>
         <span data-lang="es" style="display: none;">¿Podemos construir modelos 3D de ciudades con Vision Transformers?</span>
@@ -92,21 +96,22 @@
 
   <div class="section" id="vggt">
     <h3>
-      VGGT is a transformer architecture proposed collaboratively by Meta AI and the Oxford Visual Geometry Group.
-      Unlike Mast3r and Dust3r (the VGGT's closest alternatives),
-      it is composed of attention blocks per frame and global attention blocks that attend to tokens of each
-      frame and tokens of all frames (respectively), regardless of the number of frames (at least one).
-      The VGGT architecture consists of several blocks inspired by architectures proposed in other works.
-      Image tokenization occurs roughly as in the original vision transformer;
-      the tokens are processed by L alternating attention blocks (per-frame and global),
-      and the output is bifurcated into two sections: (1) DPT (an architecture for depth estimation) and
-      (2) the camera properties prediction head.
-      The DPT is connected to different prediction heads for the following outputs: depth maps, point maps, and tracks.
-      Specifically, the tracks prediction head is an instance of CoTracker.
-      Additionally, the point maps and depth maps heads also predict uncertainty maps.
+      Visual Geometry Grounded Transformer
     </h3>
     <p>
         <span data-lang="en">
+          VGGT is a transformer architecture proposed collaboratively by Meta AI and the Oxford Visual Geometry Group.
+          Unlike Mast3r and Dust3r (the VGGT's closest alternatives),
+          it is composed of attention blocks per frame and global attention blocks that attend to tokens of each
+          frame and tokens of all frames (respectively), regardless of the number of frames (at least one).
+          The VGGT architecture consists of several blocks inspired by architectures proposed in other works.
+          Image tokenization occurs roughly as in the original vision transformer;
+          the tokens are processed by L alternating attention blocks (per-frame and global),
+          and the output is bifurcated into two sections: (1) DPT (an architecture for depth estimation) and
+          (2) the camera properties prediction head.
+          The DPT is connected to different prediction heads for the following outputs: depth maps, point maps, and tracks.
+          Specifically, the tracks prediction head is an instance of CoTracker.
+          Additionally, the point maps and depth maps heads also predict uncertainty maps.
         </span>
         <span data-lang="es" style="display: none;">
             El VGGT es una arquitectura de transformer propuesta en colaboración 
