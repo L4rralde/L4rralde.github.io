@@ -18,6 +18,18 @@ body {
     padding: 20px;
 }
 
+.gif-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.gif-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .navbar {
     background-color: #333;
     color: #fff;
