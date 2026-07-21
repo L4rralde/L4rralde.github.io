@@ -157,3 +157,32 @@ a {
     color: #333;
   }
   
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gif-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.gif-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
